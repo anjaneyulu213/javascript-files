@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+ table,th, td {
+	border:2px solid black;
+	padding:15px;
+}
+th,td{
+	cell-padding:10px;
+}
+table{
+	border-spacing:15px;
+}
+th{
+	background-color:purple;
+	text-align: left;
+}
+td{
+	text-size:15px;
+}
+#to1{
+	width:100%;
+	background-color:#f1f1c1;
+}
