@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form>
+Question-1:<br>
+    Number of states in India?<br>
+<input type="radio" id="n1" name="no.states" value="28">
+<label for="28">(A)28</label><br>
+<input type="radio" id="n2" name="no.states" value="26">
+<label for="26">(B)26</label><br> 
+<input type="radio" id="n3" name="no.states" value="27">
+<label for="27">(C)27</label><br>
+<input type="radio" id="n4" name="no.states" value="25">
+<label for="25">(D)25</label><br>
+</form>
+<button onclick="check1()">check</button>
+<button onclick="uncheck1()">uncheck</button>
+<form id="s">
+<br>
+Que-2:
+<textarea  id="demo" rows="2" cols="25"></textarea>
+<p id="select"></p>
+<input type="radio">
+<label for="A">(A)</label><input type="text" id="m1">
+<p id="a1"></p>
+<input type="radio">
+<label for="B">(B)</label><input type="text" id="m2">
+<p id="a2"></p>
+<input type="radio">
+<label for="c">(C)</label><input type="text" id="m3">
+<p id="a3"></p>
+<input type="radio">
+<label for="D">(D)</label><input type="text" id="m4">
+<p id="a4"></p>
+</form>
+<button onclick="myFunction()">Submit</button>
+<script>
+function myFunction(){
+ var x = document.getElementById("demo").value;
+	  document.getElementById("select").innerHTML = x;
+ var y = document.getElementById("m1").value;
+	  document.getElementById("a1").innerHTML = y;
+ var z = document.getElementById("m2").value;
+	  document.getElementById("a2").innerHTML = z;
+var p = document.getElementById("m3").value;
+	  document.getElementById("a3").innerHTML = p;
+var q = document.getElementById("m4").value;
+	  document.getElementById("a4").innerHTML = q;
+	  document.getElementById("s").elements[0].style.display="none";
+ 	  document.getElementById("s").elements[2].style.display="none";
+ 	  document.getElementById("s").elements[4].style.display="none";
+ 	  document.getElementById("s").elements[6].style.display="none";
+ 	  document.getElementById("s").elements[8].style.display="none";
+ 
+	 }
+	 
+function check1(){
+	document.getElementById("n1").checked = true 
+}
+ function uncheck1(){
+	 document.getElementById("n1").checked = false
+ }
+  
+
+</script>
+ </body>
+</html>

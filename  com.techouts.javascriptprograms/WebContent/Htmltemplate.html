@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+
+<form id="s"> 
+  <p>Tasks List</p>
+  <p>Task-1</p>
+  <label for="Task Name">Task Name :  Basic validation of a login form</label><br>
+  <label for="Task priority">Task Priority : Medium</label><br>
+  <p>Task-2</p>
+  <label for="Task Name">Task Name : Mcqs with answers using radio buttons</label><br>
+  <label for="Task priority">Task Priority : Low</label><br>
+  <p>Task-3</p>
+  Task Name: 
+  <textarea id="myselect"></textarea>
+  <p id="demo2"></p>
+  Task Priority:
+  <select id="select">
+  <option value="High">High</option>
+  <option value="Medium">Medium</option>
+  <option value="Low">Low</option>
+  </select>
+  </form>
+  <br>
+  <button type="button" onclick="myFunction()">Submit</button>
+   <p id="demo"></p></center>
+  <script>
+  function myFunction() {
+	  var x = document.getElementById("myselect").value;
+	  document.getElementById("demo2").innerHTML = x;
+	  var y = document.getElementById("select").value;
+	  document.getElementById("demo").innerHTML = y;
+	  document.getElementById("s").elements[0].style.display="none";
+	  document.getElementById("s").elements[1].style.display="none";
+	   }
+	  
+   </script>
+ 
+</body>
+</html>

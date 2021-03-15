@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<form onsubmit="return validateForm()">
+<label for="first name">First name:</label><br>
+<input type="text" id="Fname"><br>
+<label for="last name">Last name:</label><br>
+<input type="text" id="Lname"  ><br>
+<label for="user id">User id:</label><br>
+<input type="text" id="userid"  ><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password"  ><br>
+<label for="confirm password">Confirm password:</label><br>
+<input type="password" id="confirmpassword"  ><br>
+<input type="submit" value="submit">
+<input type="reset" value="clear">
+</form>
+<script>
+	function validateForm() {
+		  var x = document.getElementById("Fname").value;
+		  if (x == "") {
+		    alert("Name must be filled out");
+		    return false;
+		    }
+		  var y = document.getElementById("Lname").value;
+		  if (y == "") {
+		    alert(" Last Name must be filled out");
+		    return false;
+		    }
+		  var z = document.getElementById("userid").value;
+		  if (z == "") {
+		    alert("userid must be filled out");
+		    return false;
+		    }
+		  var a = document.getElementById("password").value;
+		  if (a == "") {
+		    alert("password must be filled out");
+		    return false;
+		    }
+		  var b = document.getElementById("confirmpassword").value;
+		  if (a!=b) {
+		    alert("please enter matched password");
+		    return false;
+		    }
+	      alert("submited successfully!");
+
+} 
+	
+
+</script>
+
+</body>
+</html>
